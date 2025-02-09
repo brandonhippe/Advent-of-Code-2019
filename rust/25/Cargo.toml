@@ -1,0 +1,11 @@
+[package]
+name = "rust_2019_25"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+intcode_rust = { version = "0.1.0", path = "../intcode_rust" }
+regex = "1.10.4"
+relative-path = "1.9.2"
