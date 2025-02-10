@@ -194,7 +194,7 @@ class pointOfInterest:
             closedList.append(pos)
 
 
-class Path:
+class SolvePath:
     def __init__(self, end, length):
         self.end = end
         self.length = length
@@ -229,7 +229,7 @@ def genPaths(start, neededKeys):
                 continue
 
             if neighbor.id in neededKeys:
-                paths.append(Path(neighbor.id, pathLen + dist))
+                paths.append(SolvePath(neighbor.id, pathLen + dist))
             else:
                 openList.append([neighbor, pathLen + dist])
 
