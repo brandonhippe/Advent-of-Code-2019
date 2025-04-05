@@ -12,7 +12,7 @@ def part1(data):
     """ 2019 Day 4 Part 1
     """
 
-    r = [int(x) for x in re.findall('\d+', data[0])]
+    r = [int(x) for x in re.findall(r'\d+', data[0])]
 
     pw = [(r[0] // 10 ** i) % 10 for i in range(round(math.log10(r[0])))]
     pw.reverse()
@@ -51,7 +51,7 @@ def part2(data):
     """ 2019 Day 4 Part 2
     """
 
-    r = [int(x) for x in re.findall('\d+', data[0])]
+    r = [int(x) for x in re.findall(r'\d+', data[0])]
 
     pw = [(r[0] // 10 ** i) % 10 for i in range(round(math.log10(r[0])))]
     pw.reverse()
